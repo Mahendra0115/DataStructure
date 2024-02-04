@@ -1,4 +1,7 @@
    
+
+
+   
 // function insertionSort(arr){
 //     var currentVal;
 //     for(var i=1;i<arr.length;i++){
@@ -56,7 +59,7 @@
       for(let i=1; i<arr.length; i++){
        let minvalue = arr[i];
        let j = i-1;
-        while(arr[j]>=0 && minvalue <= arr[j]){
+        while(arr[j]>= 0 && minvalue <= arr[j]){
               arr[j+1] = arr[j];
                 j--
         }

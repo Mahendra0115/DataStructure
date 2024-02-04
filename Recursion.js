@@ -1,3 +1,6 @@
+
+/*
+
 //    Simple Logic 
 
 
@@ -7,11 +10,8 @@ function findPath(source, destination) {
       console.log("Pahuch gya!"); // This means "Reached!"
       return;
     }
-   
-    
     
     // Recursive case: if source and destination are not equal, make a recursive call
-   
    
    
     if(source === 1){
@@ -22,9 +22,9 @@ function findPath(source, destination) {
    }else if(source === 3){
      console.log("Auriaya",source)
    }
-   else{
-    console.log("Fasing problem");
-   }
+//    else{
+//     console.log("Fasing problem");
+//    }
 
 source++;
    
@@ -34,9 +34,43 @@ source++;
   // Example usage:
   findPath(1, 5);
   
+*/
 
 
+                /// Intresting   Logic  //
 
+    /*
+
+//// recursion 
+
+function ReachHome(src, desti){
+    if(src === desti){
+        console.log(" Finally Reached at home:");
+        return ;
+    }
+
+//  console.log("Going continue ...",src);
+
+// supose we are going at home from kanpur then logic 
+if(src === 1){
+console.log("checkout from Kanpur: ",src);
+}else if(src == 2){
+console.log("reached Akbarpur: ",src);
+}else if (src == 3){
+console.log("Reached Auriya: ",src);
+}else if(src == 4){
+console.log("reached Kuthaund: ",src);
+}
+
+src ++;
+ReachHome(src,desti);
+
+}
+
+ReachHome(1,5);
+
+
+*/ 
 
 
 

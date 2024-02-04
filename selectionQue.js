@@ -6,13 +6,14 @@
 function ArrayShrot(arr){
 
     let count = 0;
-
+    let min = i;
+    let j = i+1;
     for(let i =0; i<arr.length; i++ ){
-         let min = i;
+      
          for(let j=i+1; j<arr.length; j++){
             if(arr[min]>arr[i]{
-                min = j;
-
+               
+              
             }) 
          }
     }

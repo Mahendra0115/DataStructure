@@ -2,21 +2,21 @@
 
 
 // let arr1 = [5,6,4,6,8,2,3,1];
-// function bubble (arr){
-//         for(let i = 0; i<arr.length-1; i++){
-//             for(let j=0; j<arr.length-i-1; j++){
-//                 if(arr[j]>arr[j+1]){
+function bubble (arr){
+        for(let i = 0; i<arr.length-1; i++){
+            for(let j=0; j<arr.length-i-1; j++){
+                if(arr[j]>arr[j+1]){
                   
-//                     let temp = arr[j];
-//                     arr[j] = arr[j+1];
-//                     arr[j+1] = temp;
-//                 }
-//             }
-//         }
-//         return arr;
-// }
+                    let temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        return arr;
+}
 
-// console.log(bubble([5,6,4,6,8,2,3,1]));
+console.log(bubble([5,6,4,-6,8,-2,3,1]));
 
 
 
@@ -93,9 +93,9 @@ console.log(obj2);
 //         return mid;
 //     }
 //     else if(arr[mid] <= key){
-//        return start = mid+1;
+//         start = mid+1;
 //     }else{
-//        return  end = mid-1;
+//         end = mid-1;
 //     }
     
     
@@ -104,8 +104,8 @@ console.log(obj2);
 
 // }
 
-// let shortedarray = [1,2,3,4,5,6,7];
-// let key = 5;
+// let shortedarray = [1,2,3,4,5,6];
+// let key = 4;
 
 // let result = BinarySearch(shortedarray,key);
 // console.log(result);
@@ -114,31 +114,3 @@ console.log(obj2);
 
 
 
-
-function BinarySearch(arr,Key){
-             let start = 0;
-             let end = arr.length-1;
-    
-            while(start <= end){
-                const mid = Math.floor((start+end)/2);
-    
-                if(arr[mid] == Key){
-                     
-                    return mid;
-    
-                } else if(arr[mid] <= Key){
-                    start = mid+1;
-                }else{
-                    end = mid-1;
-                }
-    
-               
-             }
-             return -1;
-    }
-    
-    const sortedArray = [8,2,6,4,5];
-    const key = 4;
-    
-    let result = BinarySearch(sortedArray,key);
-    console.log(result);
